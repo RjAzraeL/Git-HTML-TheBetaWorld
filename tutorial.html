@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beta World | Tutoriales</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="author" content="RjAzrael">
+    <meta name="description" content="Pagina Beta de The Freak World">
+    <meta name="keywords" content="videogame, game">
+    <!-- <meta rel="stylesheet" href="styles/style.css"> -->
+    <!-- <meta http-equiv="refresh" content="60"> -->
+    <style>
+        body {
+            font-family: "Times New Roman", "Times New Roman", monospace;
+            background: rgb(215, 227, 240);
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(85, 98, 130);
+        }
+        nav > ul {
+            display: flex;
+            justify-content: center;
+            }
+
+        li {
+            float: left;
+            margin: 0 .75rem;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(70, 79, 104);
+        }
+
+        .active {
+            background-color: #3c6ae9;
+        }
+        p {
+            font-size: 24px;
+            line-height: 2;
+            margin-bottom: 30px;
+        }
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+        .logo {
+            padding: 0px 100px;
+            max-width: 14%;
+            float: left;
+        }
+        .main-back {
+            background-color: rgb(59, 160, 255);
+            padding: 0px;
+            margin: 0;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 0, 0);
+            letter-spacing: 1px;
+            font-size: 1rem;
+            background-color: #FFF;
+            margin: 0 auto;
+        }
+
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 20px;
+            color: white;
+            text-align: left;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+        .centered {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .div-contenedor {
+            width: max-content; /* Ajusta el ancho del contenedor al contenido */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            text-align: center; /* Centra el contenido dentro del contenedor */
+        }
+        .main-block {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: white;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        input[type=text],
+        input[type=password],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-back">
+            <img src="media/image/FreakLogo.png" class="logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="games.html">Juegos</a></li>
+                <li><a class="active" href="tutorial.html">Tutoriales</a></li>
+                <li><a href="comunity.html">Comunidad</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="main-block">
+        <br><h1 class="centered">Tutoriales</h1><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WQkKxnl_szk?si=zRc8E8J9mUlqBl8d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Transición de Niveles</h2>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/49-O_GT1s6A?si=Ayu-_XaGTAJppEMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Archivo INI</h2>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cs-IdS731Kg?si=Gkd1zW_unupXR28D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Sistema de Dialogos Simple</h2>
+        <br>
+    </div>
+    <br>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2013-2024 Freak World.</p>
+    </footer>
+</body>
+</html>

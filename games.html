@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beta World | Juegos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="author" content="RjAzrael">
+    <meta name="description" content="Pagina Beta de The Freak World">
+    <meta name="keywords" content="videogame, game">
+    <!-- <meta rel="stylesheet" href="styles/style.css"> -->
+    <!-- <meta http-equiv="refresh" content="60"> -->
+    <style>
+        body {
+            font-family: "Times New Roman", "Times New Roman", monospace;
+            background: rgb(215, 227, 240);
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(85, 98, 130);
+        }
+        nav > ul {
+            display: flex;
+            justify-content: center;
+            }
+
+        li {
+            float: left;
+            margin: 0 .75rem;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(70, 79, 104);
+        }
+
+        .active {
+            background-color: #a2e551;
+        }
+        input[type=text],
+        input[type=password],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .logo {
+            padding: 0px 100px;
+            max-width: 14%;
+            float: left;
+        }
+        .main-back {
+            background-color: rgb(59, 160, 255);
+            padding: 0px;
+            margin: 0;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 0, 0);
+            letter-spacing: 1px;
+            font-size: 1rem;
+            background-color: #FFF;
+            margin: 0 auto;
+        }
+
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 20px;
+            color: white;
+            text-align: left;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+        .centered {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .div-contenedor {
+            width: max-content; /* Ajusta el ancho del contenedor al contenido */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            text-align: center; /* Centra el contenido dentro del contenedor */
+        }
+        .main-block {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: white;
+        }
+        p {
+            font-size: 24px;
+            line-height: 2;
+            margin-bottom: 30px;
+        }
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-back">
+            <img src="media/image/FreakLogo.png" class="logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="games.html">Juegos</a></li>
+                <li><a href="tutorial.html">Tutoriales</a></li>
+                <li><a href="comunity.html">Comunidad</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="main-block">
+        <br><h1 class="centered">Lista de Juegos Archivados</h1><br>
+        <div>
+            <table>
+                <colgroup>
+                    <col >
+                    <col style="background-color: #FFCF37;">
+                    <col>
+                    <col>
+                </colgroup>
+            <th>Año</th>
+            <th>Videojuego</th>
+            <th>Genero</th>
+            <th>Desarrollo</th>
+            <th>Propiedad</th>
+            
+            <tr>
+                <td>2013</td>
+                <td><a href="https://archive.org/download/yyg-sandbox-b-v2/yyg-sandbox-b.zip/boxor-version-1/Boxor.exe" target="_blank">Boxor</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/defender-saga/571748" target="_blank">Defender I</a></td>
+                <td>Tower Defense</td>
+                <td>Electrikey</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/superpoderes-adventures-land/557334" target="_blank">Super Poderes: Adventure's Land</a></td>
+                <td>2D Platformer</td>
+                <td>RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/moshy-creak/556983" target="_blank">Moshy Creak</a></td>
+                <td>2D Platformer</td>
+                <td>IdeasGM</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/adventure-castle/556754" target="_blank">Adventure Castle</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/pokemon-destino/556953" target="_blank">Pokémon Destino</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/el-juego-mas-facil-del-mundo/556946" target="_blank">El Juego más Facil del Mundo</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/crazy-chickens/558319" target="_blank">Crazy Chickens 1</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/toy-factory/556913" target="_blank">Toy Factory</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td><a href="https://gamejolt.com/games/crazy-chickens-remastered/569563" target="_blank">Crazy Chickens 1: REMASTERED</a></td>
+                <td>2D Platformer</td>
+                <td>RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td><a href="https://gamejolt.com/games/slow-run/556934" target="_blank">Slow Run</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a href="https://gamejolt.com/games/defender-saga/571748" target="_blank">Defender II</a></td>
+                <td>Tower Defense</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a href="https://gamejolt.com/games/zero-gravity/571735" target="_blank">Zero Gravity</a></td>
+                <td>Shoot'em Up</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td><a href="https://gamejolt.com/games/snow-odyssey/571742" target="_blank">Snow Odyssey</a></td>
+                <td>Cenital Puzzle</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td><a href="https://gamejolt.com/@TheFreakWorld/games" target="_blank">Super Woods</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td><a href="https://gamejolt.com/games/freak-all-stars-fighting-cards/571778" target="_blank">Freak All-Stars: Fighting Cards</a></td>
+                <td>Roguelike Deckbuilder</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td><a href="https://gamejolt.com/games/mayel-remix/571800" target="_blank">Mayel Remix</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World & Avarte</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td><a href="https://gamejolt.com/games/two-recipes-about-parten/624895" target="_blank">Two Recipes About Parten</a></td>
+                <td>Cenital Puzzle</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td><a href="https://store.steampowered.com/app/2180830/Super_Crazy_Chickens/" target="_blank">Super Crazy Chickens</a></td>
+                <td>2D Platformer</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td><a href="https://rjazrael.itch.io/stop-the-player" target="_blank">Stop the Player!</a></td>
+                <td>Puzzle</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td><a href="https://gamejolt.com/games/ZeroGravitySapiient/824830" target="_blank">Zero Gravity: sapIIens</a></td>
+                <td>Shoot'em Up</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>Crazy Chickens 1: Definitive Edition</td>
+                <td>2D Platformer</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>Crazy Chickens 2</td>
+                <td>2D Platformer</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>Izakis</td>
+                <td>Action RPG</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>Maze</td>
+                <td>Roguelike Platformer</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>Solar Squad</td>
+                <td>Roguelike Action</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td><a href="https://gamejolt.com/games/the-traveller/569747" target="_blank">The Traveller</a></td>
+                <td>Roguelike Action</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>The Wailing Pillar</td>
+                <td>2D Platformer</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>Zhilia: Rising from the Ashes</td>
+                <td>JRPG</td>
+                <td>Electrikey & RjAzraeL</td>
+                <td>The Freak World</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/pokemon-empire/556967" target="_blank">Pokémon Empire I</a></td>
+                <td>Tower Defense</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/pokemon-empire/556967" target="_blank">Pokémon Empire II</a></td>
+                <td>Tower Defense</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/pokemon-empire/556967" target="_blank">Pokémon Empire III Ultimate</a></td>
+                <td>Tower Defense</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/pokemon-empire-4/571712" target="_blank">Pokémon Empire 4 Final</a></td>
+                <td>Tower Defense</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/pokemon-smash-battles/571722" target="_blank">Pokémon Smash Battles I</a></td>
+                <td>2D Platformer</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/pokemon-smash-battles/571722" target="_blank">Pokémon Smash Battles II</a></td>
+                <td>2D Platformer</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/flappy-bird-ideasgm/571728" target="_blank">Flappy Bird GM</a></td>
+                <td>Action</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/dragon-ball-lodeu/571668" target="_blank">Dragon Ball Lodeu</a></td>
+                <td>Fighting</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/dragon-ball-lodeu-2/571698" target="_blank">Dragon Ball Lodeu II</a></td>
+                <td>Fighting</td>
+                <td>IdeasGM</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a href="https://gamejolt.com/games/avoiderland/117869" target="_blank">Avoiderland</a></td>
+                <td>Rhythm Game</td>
+                <td>IdeasGM</td>
+                <td>IdeasGM</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>Mayel Adventure</td>
+                <td>2D Platformer</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/mayelx/556681" target="_blank">Mayel X</a></td>
+                <td>2D Platformer</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td><a href="https://gamejolt.com/games/icecream/556513" target="_blank">Ice Cream</a></td>
+                <td>Stealth-Action Game</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a href="https://download1580.mediafire.com/jsyuay49cnxgr7kW4AfVC1LvWQH8cGpoHDK3greEpJ8OFOMTy-cA-q5ymRCHZZp-93llHUwfh8wQ9FA_w3t5OT1zYNH_6_UZweafUkKRfX5BNVc560EZjFaU7uRPVc1oYkhCoaPJFJksuRHvUGhzhB5FObRTJiS18uH0y6ps9Zs/d2cj1bd7wjhc27k/Ice+Cream+2+%28actualizado%29.exe" target="_blank">Ice Cream 2</a></td>
+                <td>Stealth-Action Game</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a href="https://download1510.mediafire.com/v1lm82ro0cjgHuXBC4BWnZbJbgB_6uAl4DnDMup89oeStnkLDXJnc73KRRMEL6vA3dUtbv_5jY4042Xz3vEdAmCDzv7bK2UY8KTZKKEIPtc1W96zIKKeMH0OooB4OoSQtLvRH_5efsksAGiGkuvMvAU8s6vqnZrVZvx-xQjsErE/uccp3r51c4itar4/KILL+EVERYBODY.exe" target="_blank">Kill Everybody!</a></td>
+                <td>Action</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a href="https://download1514.mediafire.com/p3vc76xfigag2rvlaTKJ14IN4UU-kBUb5EzcYrHf9yIslI8PZCHSRcdsdt8AFe21e2tw5rD_bt3ile3KxEZRChH6tlcb55-iHW3eUSKezrhyNL8PCsphIVrsfZorDa9QDp7b5DvKw5bNdT8Y-JZET5wUWdzEI2MeEAFF2emKuwY/3j0aq4vq6ztuja3/Bodyguard.exe" target="_blank">Bodyguard</a></td>
+                <td>Simulator</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td><a href="https://gamejolt.com/games/panchoatropella/556706" target="_blank">PANCHO Atropella</a></td>
+                <td>Action</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>Mayel World</td>
+                <td>2D Platformer</td>
+                <td>Avarte</td>
+                <td>Avarte</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td><a href="https://gamejolt.com/games/super-fucspco/569693" target="_blank">Super Fucspco: Big Adventure Ultimate +</a></td>
+                <td>Beat'em Up</td>
+                <td>The Senti Master</td>
+                <td>The Senti Master</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a href="http://download1654.mediafire.com/hkw7t1lfg3eg7fLum0gdZ-jZiJLV9PfqSFMhL0yiVSXzag3s6MFH9Clk-HKG2Yq-KiGZ_DZdqaeu4jbPzPeH-kXAIJype_1IKmjY6j7kp1HbyixgW26kmFoQWeJH7TDBBxlN2usseSRr9HaN2gos70A8Al9G5f7gnYaRfyimDz0/i9uzzbtbfm4qafi/Fucspco_Big_Adventure_2_Requium_Of_Demon.rar" target="_blank">Fucspco Big Adventure 2</a></td>
+                <td>Beat'em Up</td>
+                <td>The Senti Master</td>
+                <td>The Senti Master</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td><a href="https://gamejolt.com/games/Regular_Story/220794" target="_blank">Regular Story</a></td>
+                <td>2D Platformer</td>
+                <td>The Senti Master</td>
+                <td>The Senti Master</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td><a href="https://gamejolt.com/games/paciencia/267795" target="_blank">UNDERTALE PATIENCE</a></td>
+                <td>RPG & Action</td>
+                <td>The Senti Master</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td><a href="https://gamejolt.com/games/SCP_Pollution/430978" target="_blank">S.C.P. Unpaired Pollution.</a></td>
+                <td>Horror & Suspense</td>
+                <td>The Senti Master</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td><a href="https://gamejolt.com/games/CABALLO_EXE/441579" target="_blank">Mundo Alexo Play C.A.B.A.L.L.O.EXE</a></td>
+                <td>2D Platformer</td>
+                <td>The Senti Master</td>
+                <td>The Senti Master</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td><a href="https://gamejolt.com/games/NO_JUEGUES_ESTE_JUEGO/520339" target="_blank">DON'T PLAY THIS GAME</a></td>
+                <td>2D Platformer</td>
+                <td>The Senti Master</td>
+                <td>The Senti Master</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td><a href="https://gamejolt.com/games/The_Migrant/559677" target="_blank">The Migrant - From A Different Planet</a></td>
+                <td>2D Platformer</td>
+                <td>The Senti Master</td>
+                <td>The Senti Master</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td><a href="https://gamejolt.com/games/RafaLegends/583872" target="_blank">Rafa Legends Remix</a></td>
+                <td>Action RPG</td>
+                <td>The Senti Master</td>
+                <td>CuevasGames</td>
+            </tr>
+            <tr>
+                <td>Cancelled</td>
+                <td>FAITH: Primal Evil</td>
+                <td>Horror & Suspense</td>
+                <td>The Senti Master</td>
+                <td>/fangame/</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://archive.org/download/yyg-sandbox-r/yyg-sandbox-r.zip/rafa-legends-samuel-find/Rafa_legends_.exe" target="_blank">Rafa Legends 1: Samuel Find</a></td>
+                <td>2D Platformer</td>
+                <td>CuevasGames</td>
+                <td>CuevasGames</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://archive.org/download/yyg-sandbox-r/yyg-sandbox-r.zip/rafa-legends-2-heros-shadow-demo/Rafa_Legends_2_DEMO.exe" target="_blank">Rafa Legends 2: Shadow of Sword DEMO</a></td>
+                <td>2D Platformer</td>
+                <td>CuevasGames</td>
+                <td>CuevasGames</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td><a href="https://www.youtube.com/watch?v=6XBDhmA69Fg" target="_blank">Rafa Legends 1: Remake</a></td>
+                <td>2D Platformer</td>
+                <td>CuevasGames</td>
+                <td>CuevasGames</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td><a href="https://gamejolt.com/games/superpoderes/557229" target="_blank">Super Poderes</a></td>
+                <td>2D Platformer</td>
+                <td>MegaMasterSonic2000</td>
+                <td>MegaMasterSonic2000</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td><a href="https://gamejolt.com/games/superpoderes2/557292" target="_blank">Super Poderes 2</a></td>
+                <td>2D Platformer</td>
+                <td>MegaMasterSonic2000</td>
+                <td>MegaMasterSonic2000</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>Mundo de Chird</td>
+                <td>2D Platformer</td>
+                <td>Hancel Benjamin</td>
+                <td>Hancel Benjamin</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="http://download1531.mediafire.com/dknueono4osgMFqng0EaWAY0FytqoHsM7L7X7Pa3j71ikP0YNOyqSbi6ucfhjEVvqisZ3J6E5Ao9T4XR77pTd9qthjPAnL3qXo5GUQf5rblkmEcwy2bIr0qBDAE2cawUceQEYYUVopnC0RHTW4jOBBsgKgc7jGG8Bzqe1BmTY1Q/19bx2g4t9769y55/Disparex+2+1.0.exe" target="_blank">Disparex</a></td>
+                <td>Cenital Shooter</td>
+                <td>Baltasar Righetti</td>
+                <td>Baltasar Righetti</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td><a href="https://gamejolt.com/games/pixel/557380" target="_blank">PiXel</a></td>
+                <td>2D Platformer</td>
+                <td>Xtudios</td>
+                <td>Xtudios</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td><a href="https://gamejolt.com/games/the-legendary-jhos/557397" target="_blank">The Legendary Jhos</a></td>
+                <td>2D Platformer</td>
+                <td>DraskullGames</td>
+                <td>DraskullGames</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Tecno Soldiers</td>
+                <td>Action</td>
+                <td>Maximiliano Arce</td>
+                <td>Maximiliano Arce</td>
+            </tr>
+            <tr>
+                <td>Cancelled</td>
+                <td>Evil in Hampshire</td>
+                <td>Action RPG</td>
+                <td>Eduardo Fabian Vidaca</td>
+                <td>Eduardo Fabian Vidaca</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td>Liza: End of the Galaxy</td>
+                <td>2D Platformer</td>
+                <td>SleepyPlayer16</td>
+                <td>SleepyPlayer16</td>
+            </tr>
+            <tr>
+                <td>TBA</td>
+                <td><a href="https://twitter.com/Antonio65Z" target="_blank">Requiem of Shadows</a></td>
+                <td>Action RPG</td>
+                <td>Zantonio</td>
+                <td>Zantonio</td>
+            </tr>
+        </table>
+        <br>
+        </div>
+    </div>
+    <br>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2013-2024 Freak World.</p>
+    </footer>
+</body>
+</html>
